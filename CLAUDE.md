@@ -20,7 +20,7 @@ No test runner is configured yet.
 
 Single-page Next.js 15 App Router site. Everything lives under `app/`:
 
-- `app/layout.tsx` — root layout; wraps children in `ReactQueryProvider`, loads Geist fonts
+- `app/layout.tsx` — root layout; wraps children in `ReactQueryProvider`, loads inter fonts
 - `app/page.tsx` — home page (the landing page)
 - `app/providers/` — client providers (React Query)
 - `app/lib/react-query.ts` — singleton `QueryClient`

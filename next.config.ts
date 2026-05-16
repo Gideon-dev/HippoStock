@@ -1,9 +1,11 @@
 import type { NextConfig } from "next";
 
+const isDev = process.env.NODE_ENV === "development";
+
 const contentSecurityPolicy = [
   "default-src 'self'",
-  // Next.js requires unsafe-inline for its runtime scripts & Tailwind injects styles inline
-  "script-src 'self' 'unsafe-inline'",
+  // React dev mode needs unsafe-eval for call stack reconstruction; stripped in production
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: blob:",
   "font-src 'self'",
