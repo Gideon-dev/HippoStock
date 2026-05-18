@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { buildMetadata } from "@/app/lib/seo";
 import { Navbar } from "@/app/components/layout/navbar";
 import { Footer } from "@/app/components/layout/footer";
 import { HeroSection } from "@/app/components/sections/hero-section";
@@ -10,6 +12,13 @@ import { HowItWorksSection } from "@/app/components/sections/how-it-works-sectio
 import { HippostockSection } from "@/app/components/sections/hippostock-section";
 import { NightEconomySection } from "@/app/components/sections/night-economy-section";
 
+export const metadata: Metadata = buildMetadata({
+  title: "Direct Factory Sourcing for Pharmacies & Clinics",
+  description:
+    "Get medical consumables and high-demand products 25–40% cheaper, sourced directly from factories. 10–14 day delivery to pharmacies, clinics, and SMEs across Nigeria & Ghana.",
+  path: "/",
+});
+
 export default function Home(): React.JSX.Element {
   return (
     <main>
@@ -19,7 +28,7 @@ export default function Home(): React.JSX.Element {
       <TrustedSection />
       <CheaperStocksSection />
       <CutCostSection />
-      <ProductCategorySection />
+      <ProductCategorySection /> 
       <HowItWorksSection />
       <HippostockSection />
       <NightEconomySection />

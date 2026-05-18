@@ -8,7 +8,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary-blue text-white hover:bg-primary-blue/90",
+        default: "bg-primary-blue text-white hover:bg-primary-blue/90 py-2.5! px-[47px]! gap-2",
         outline:
           "border-border bg-background hover:bg-muted hover:text-foreground aria-expanded:bg-muted aria-expanded:text-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
         secondary:
@@ -20,7 +20,7 @@ const buttonVariants = cva(
         link: "text-primary-blue underline-offset-4 hover:underline",
         whatsapp: "bg-whatsapp text-white hover:bg-whatsapp/90 rounded-full",
         dark: "bg-black text-white hover:bg-black/80",
-        service: "bg-primary-blue text-white rounded-full text-sm font-medium hover:bg-primary-blue/90",
+        service: "bg-primary-blue text-white rounded-full text-sm xl:text-[18px] font-medium hover:bg-primary-blue/90 [box-shadow:0px_4px_4px_0px_#00000045] min-h-[59px]",
       },
       size: {
         default:

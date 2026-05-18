@@ -1,5 +1,5 @@
-import { AnimatedCounter } from "@/app/ui/animated-counter";
-import { FadeUp } from "@/app/ui/fade-up";
+import { AnimatedCounter } from "@/app/components/ui/animated-counter";
+import { FadeUp } from "@/app/components/ui/fade-up";
 
 const STATS = [
   {
@@ -30,35 +30,47 @@ const STATS = [
 
 export function TrustedSection(): React.JSX.Element {
   return (
-    <section className="bg-primary-blue py-16 px-8 md:px-20">
+    <section className="bg-primary-blue py-16 md:px-11.5 px-5.25 w-full">
       <div className="mx-auto max-w-7xl">
         <FadeUp>
-          <div className="flex items-center gap-4 mb-12">
-            <span className="flex-1 border-t border-white/40" />
-            <h2 className="text-white text-xl md:text-2xl font-bold text-center whitespace-nowrap">
+          <div className="flex flex-col md:flex-row md:items-center gap-4 mb-12">
+            <div
+              className="hidden md:block flex-1 h-px"
+              style={{
+                background:
+                  'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, #FFFFFF 100%)',
+              }}
+            />
+            <h2 className="text-white text-base md:text-[28px] max-w-[508px] font-bold text-center whitespace-nowrap md:whitespace-normal">
               Trusted across trade, retail &amp; hospitality
             </h2>
-            <span className="flex-1 border-t border-white/40" />
+            <div
+              className="hidden md:block flex-1 h-px"
+              style={{
+                background:
+                  'linear-gradient(90deg, #FFFFFF 0%, rgba(255,255,255,0.5) 50%, rgba(255,255,255,0) 100%)',
+              }}
+            />
           </div>
         </FadeUp>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/30">
+        <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-white/30 ">
           {STATS.map((stat) => (
             <div key={stat.value} className="flex flex-col items-center text-center px-6 py-4">
               {stat.isNumeric ? (
                 <div className="flex items-baseline gap-1">
                   <AnimatedCounter
                     value={stat.value}
-                    className="text-white text-3xl md:text-4xl font-bold italic"
+                    className="text-white text-[25px] font-semibold "
                   />
-                  <span className="text-white text-xl font-bold italic">{stat.suffix}</span>
+                  <span className="text-white text-[25px] font-semibold">{stat.suffix}</span>
                 </div>
               ) : (
-                <span className="text-white text-2xl md:text-3xl font-bold italic">
+                <span className="text-white text-[25px] font-semibold">
                   {stat.value}
                 </span>
               )}
-              <span className="text-white/80 text-xs md:text-sm italic mt-2 leading-snug">
+              <span className="text-white/80 text-[21px] italic leading-snug">
                 {stat.label}
               </span>
             </div>

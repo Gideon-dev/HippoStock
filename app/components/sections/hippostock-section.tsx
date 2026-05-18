@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FadeUp } from "@/app/ui/fade-up";
+import { FadeUp } from "@/app/components/ui/fade-up";
 
 export function HippostockSection(): React.JSX.Element {
   return (
