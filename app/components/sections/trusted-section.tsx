@@ -41,7 +41,7 @@ export function TrustedSection(): React.JSX.Element {
                   'linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, #FFFFFF 100%)',
               }}
             />
-            <h2 className="text-white text-base md:text-[28px] max-w-[508px] font-bold text-center whitespace-nowrap md:whitespace-normal">
+            <h2 className="text-white text-3xl md:text-[28px] w-full max-w-[508px] font-bold text-center">
               Trusted across trade, retail &amp; hospitality
             </h2>
             <div
