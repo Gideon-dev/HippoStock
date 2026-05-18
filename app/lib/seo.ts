@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const BASE_URL = process.env.NEXT_PUBLIC_APP_BASE_URL ?? "https://hippoprocurement.com";
+export const BASE_URL = process.env.NEXT_PUBLIC_APP_BASE_URL || "http://localhost:3000";
 
 export const DEFAULT_DESCRIPTION =
   "Hippo Procurement Ltd sources medical consumables and high-demand products directly from factories for pharmacies, clinics, and SMEs in Nigeria & Ghana — 25–40% cheaper stock with 10–14 day delivery, no middlemen.";

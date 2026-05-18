@@ -25,6 +25,8 @@ export function Navbar(): React.JSX.Element {
               alt="Hippo Procurement"
               fill
               className="object-cover object-center w-auto"
+              loading="eager"
+              priority
             />
           </Link>
 
