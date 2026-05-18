@@ -17,7 +17,7 @@ export function HeroSection(): React.JSX.Element {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-black/60 " />
 
       <div className="relative z-10 flex flex-col justify-center min-h-screen px-8 md:px-20 pb-20 pt-10 max-w-278.25" >
         <FadeUp delay={0}>
@@ -46,7 +46,7 @@ export function HeroSection(): React.JSX.Element {
         className="fixed bottom-8 right-8 z-50 bg-whatsapp text-white rounded-full w-14 h-14 flex items-center justify-center shadow-xl hover:bg-whatsapp/90 transition-colors"
         aria-label="Contact us on WhatsApp"
       >
-        <MessageCircle className="size-6" />
+        <Image src="/svgs/WA-icon.svg" alt="whatspap icon" width={102} height={102} priority={false}/>
       </Link>
     </section>
   );
