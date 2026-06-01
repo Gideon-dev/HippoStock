@@ -59,7 +59,7 @@ const OperationalAdvantages = () => {
         <Vstack className="max-w-7xl mx-auto px-4 gap-15">
             <div>
                 <FadeUp>
-                    <span className="text-black font-bold text-[40px]  uppercase">Operational Advantage</span>
+                    <span className="text-black font-bold text-[40px]  uppercase">Operational Advantages</span>
                 </FadeUp>
                 <div className="border border-black mt-[25.99px]"/>
             </div>
