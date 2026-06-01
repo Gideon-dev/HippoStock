@@ -22,7 +22,7 @@ export const metadata: Metadata = buildMetadata({
 export default function Home(): React.JSX.Element {
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       <HeroSection />
       <ServicesSection />
       <TrustedSection />
@@ -32,7 +32,7 @@ export default function Home(): React.JSX.Element {
       <HowItWorksSection />
       <HippostockSection />
       <NightEconomySection />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
