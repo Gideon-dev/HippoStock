@@ -8,13 +8,14 @@ import { createPortal } from "react-dom";
 
 import { buttonVariants } from "@/app/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ROUTES } from "@/lib/routes";
 
 const NAV_LINKS = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Investor", href: "#investor" },
-  { label: "Hippo Stock", href: "#hippostock" },
-  { label: "Night Economy", href: "#night-economy" },
+   { label: "Home", href:  ROUTES.HOME  },
+    { label: "About", href: ROUTES.ABOUT },
+    { label: "Investor", href: ROUTES.INVESTORS },
+    { label: "Hippo Stock", href: ROUTES.HIPPO_STOCK },
+    { label: "Night Economy", href: ROUTES.NIGHT_ECONOMY }
 ] as const;
 
 const SIDEBAR_VARIANTS = {
