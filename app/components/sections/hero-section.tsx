@@ -17,7 +17,7 @@ export function HeroSection(): React.JSX.Element {
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-black/60 " />
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-10 flex flex-col justify-center min-h-screen px-8 md:px-20 pb-20 pt-10 max-w-278.25" >
         <FadeUp delay={0}>
