@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
-import { buttonVariants } from "@/app/components/ui/button";
-import { FadeUp } from "@/app/components/ui/fade-up";
+import { buttonVariants } from "@components/ui/button";
+import { FadeUp } from "@components/ui/fade-up";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 

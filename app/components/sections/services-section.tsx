@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-import { Button } from "@/app/components/ui/button";
-import { FadeUp } from "@/app/components/ui/fade-up";
-import { Vstack } from "../ui/stacks";
+import { Button } from "@components/ui/button";
+import { FadeUp } from "@components/ui/fade-up";
+import { Vstack } from "@components/ui/stacks";
 import { cn } from "@/lib/utils";
 
 interface ServiceCard {
@@ -86,9 +86,9 @@ export function ServicesSection(): React.JSX.Element {
                     <p className="text-black text-base xl:text-xl leading-relaxed flex-1 max-w-[325px]">
                       {card.description}
                     </p>
-                    <Button variant="service" className="w-full mt-2 gap-1.5 py-3!">
+                    <Button variant="service" className="w-full mt-2 gap-1.5 py-3! [box-shadow:none] animate-border-pulse">
                       {card.cta}
-                      <ArrowUpRight className="size-4" />
+                      <ArrowUpRight className="size-6 shrink-0" />
                     </Button>
                   </div>
                 </div>

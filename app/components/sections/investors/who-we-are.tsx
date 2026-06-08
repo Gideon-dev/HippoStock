@@ -1,12 +1,12 @@
-import { Hstack, Vstack } from "../../ui/stacks"
-import { FadeUp } from "../../ui/fade-up"
-import { AnimatedCounter } from "../../ui/animated-counter"
+import { Hstack, Vstack } from "@components/ui/stacks"
+import { FadeUp } from "@components/ui/fade-up"
+import { AnimatedCounter } from "@components/ui/animated-counter"
 
 const WhoWeAreSection = () => {
   return (
     <div className="w-full bg-white pt-17.5 pb-22">
       <Vstack className="max-w-7xl mx-auto lg:flex-row lg:items-center gap-21.75 px-4">
-        <Vstack className="gap-7.5 flex-1">
+        <Vstack className="gap-7.5 max-w-161.5 w-full">
           <FadeUp delay={0}>
             <h1 className="text-[50px] text-black font-bold">Who we are</h1>
           </FadeUp>

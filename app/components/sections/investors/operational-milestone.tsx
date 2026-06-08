@@ -1,5 +1,5 @@
-import { Hstack, Vstack } from "../../ui/stacks"
-import { FadeUp } from "../../ui/fade-up"
+import { Hstack, Vstack } from "@components/ui/stacks"
+import { FadeUp } from "@components/ui/fade-up"
 
 
 const OperationalMilestone = () => {

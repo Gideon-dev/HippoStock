@@ -1,5 +1,5 @@
-import { AnimatedCounter } from "@/app/components/ui/animated-counter";
-import { FadeUp } from "@/app/components/ui/fade-up";
+import { AnimatedCounter } from "@components/ui/animated-counter";
+import { FadeUp } from "@components/ui/fade-up";
 
 const STATS = [
   {

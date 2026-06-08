@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { Hstack, Vstack } from "../../ui/stacks"
-import { Button } from "../../ui/button"
+import { Hstack, Vstack } from "@components/ui/stacks"
+import { Button } from "@components/ui/button"
 import { DownloadIcon } from "lucide-react"
-import { FadeUp } from "../../ui/fade-up"
+import { FadeUp } from "@components/ui/fade-up"
 
 const InvestorHero = () => {
   return (

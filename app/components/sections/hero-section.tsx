@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 
-import { FadeUp } from "@/app/components/ui/fade-up";
+import { FadeUp } from "@components/ui/fade-up";
 
 const WHATSAPP_NUMBER = "+2348000000000";
 
 export function HeroSection(): React.JSX.Element {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden ">
+    <section id="home" className="relative h-screen xl:h-fit overflow-hidden ">
       <Image
         src="/images/hero-bg.jpg"
         alt="Shipping port"
@@ -19,7 +19,7 @@ export function HeroSection(): React.JSX.Element {
       />
       <div className="absolute inset-0 bg-black/60" />
 
-      <div className="relative z-10 flex flex-col justify-center min-h-screen px-8 md:px-20 pb-20 pt-10 max-w-278.25" >
+      <div className="relative z-10 flex flex-col justify-center px-8 md:px-20 pb-20 pt-10 max-w-278.25" >
         <FadeUp delay={0}>
           <span className="w-fit px-5 lg:px-10 bg-primary-blue text-white text-base md:text-[25px] font-medium text-center flex items-center justify-center rounded-full mb-6 py-2.5  lg:min-h-11.25">
             Direct Factory Access

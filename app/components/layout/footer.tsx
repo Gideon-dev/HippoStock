@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Smartphone } from "lucide-react";
 
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@components/ui/button";
 
 const QUICK_LINKS = [
   { label: "Home", href: "#home" },

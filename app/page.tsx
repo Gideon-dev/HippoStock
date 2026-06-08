@@ -1,16 +1,14 @@
 import type { Metadata } from "next";
 import { buildMetadata } from "@/app/lib/seo";
-import { Navbar } from "@/app/components/layout/navbar";
-import { Footer } from "@/app/components/layout/footer";
-import { HeroSection } from "@/app/components/sections/hero-section";
-import { ServicesSection } from "@/app/components/sections/services-section";
-import { TrustedSection } from "@/app/components/sections/trusted-section";
-import { CheaperStocksSection } from "@/app/components/sections/cheaper-stocks-section";
-import { CutCostSection } from "@/app/components/sections/cut-cost-section";
-import { ProductCategorySection } from "@/app/components/sections/product-category-section";
-import { HowItWorksSection } from "@/app/components/sections/how-it-works-section";
-import { HippostockSection } from "@/app/components/sections/hippostock-section";
-import { NightEconomySection } from "@/app/components/sections/night-economy-section";
+import { HeroSection } from "@components/sections/hero-section";
+import { ServicesSection } from "@components/sections/services-section";
+import { TrustedSection } from "@components/sections/trusted-section";
+import { CheaperStocksSection } from "@components/sections/cheaper-stocks-section";
+import { CutCostSection } from "@components/sections/cut-cost-section";
+import { ProductCategorySection } from "@components/sections/product-category-section";
+import { HowItWorksSection } from "@components/sections/how-it-works-section";
+import { HippostockSection } from "@components/sections/hippostock-section";
+import { NightEconomySection } from "@components/sections/night-economy-section";
 
 export const metadata: Metadata = buildMetadata({
   title: "Direct Factory Sourcing for Pharmacies & Clinics",

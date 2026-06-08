@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { buttonVariants } from "@/app/components/ui/button";
+import { buttonVariants } from "@components/ui/button";
 import { cn } from "@/lib/utils";
-import { Hstack } from "../ui/stacks";
-import { MobileNav } from "./mobile-nav";
+import { Hstack } from "@components/ui/stacks";
+import { MobileNav } from "@components/layout/mobile-nav";
 import { ROUTES } from "@/lib/routes";
 
 const NAV_LINKS = [

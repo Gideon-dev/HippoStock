@@ -1,5 +1,5 @@
 
-import { FadeUp } from "../../ui/fade-up"
+import { FadeUp } from "@components/ui/fade-up"
 
 const RevenueModel = () => {
     const REVENUE_MODEL = [

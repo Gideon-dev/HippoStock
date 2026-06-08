@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ReactQueryProvider } from "./providers/ReactQueryProvider";
+import { ReactQueryProvider } from "@/app/providers/ReactQueryProvider";
 import { BASE_URL, DEFAULT_DESCRIPTION, DEFAULT_OG_IMAGE } from "@/app/lib/seo";
-import { Navbar } from "./components/layout/navbar";
-import { Footer } from "./components/layout/footer";
+import { Navbar } from "@components/layout/navbar";
+import { Footer } from "@components/layout/footer";
 
 const inter = Inter({
   subsets: ["latin"],

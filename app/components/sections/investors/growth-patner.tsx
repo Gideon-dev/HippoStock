@@ -1,6 +1,6 @@
-import { Button } from "../../ui/button"
-import { Vstack } from "../../ui/stacks"
-import { FadeUp } from "../../ui/fade-up"
+import { Button } from "@components/ui/button"
+import { Vstack } from "@components/ui/stacks"
+import { FadeUp } from "@components/ui/fade-up"
 
 
 const GrowthPatner = () => {

@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 
-import { Button } from "@/app/components/ui/button";
-import { Input } from "@/app/components/ui/input";
+import { Button } from "@components/ui/button";
+import { Input } from "@components/ui/input";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/app/components/ui/select";
+} from "@components/ui/select";
 
 interface AgentStep {
   number: string;
@@ -73,7 +73,7 @@ export function HowItWorksSection(): React.JSX.Element {
 
   return (
     <section id="agent" className="bg-cream py-20 px-5.25 md:px-11.5 ">
-      <div className="mx-auto max-w-360 grid grid-cols-1 lg:grid-cols-2 gap-16 items-start justify-between">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2  items-start justify-between">
         <div>
           <div className="flex items-center gap-2 mb-4">
             <span className="w-9.5 h-9.5 rounded-full bg-primary-blue inline-block" />
@@ -91,68 +91,69 @@ export function HowItWorksSection(): React.JSX.Element {
                   {step.number}
                 </span>
                 <div className="flex-1">
-                  <h3 className="font-bold text-base md:text-[25px] text-black mb-1">{step.title}</h3>
+                  <h3 className="font-bold text-base md:text-[25px] text-black mb-1 shrink-0">{step.title}</h3>
                   <p className="text-black text-base leading-relaxed mt-7.5">{step.description}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
+        <div className="flex justify-end items-center"> 
+          <div className="bg-[#DFDFDF] rounded-2xl p-8 shadow-sm max-w-xl w-full ">
+            <h3 className="font-semibold text-[38px] text-black text-center mb-6">Join as agent</h3>
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-white px-8 rounded-[10px] py-11 max-w-133.75 w-full mx-auto">
+              <Input
+                placeholder="Full Name"
+                value={form.fullName}
+                onChange={(e) => setForm((prev) => ({ ...prev, fullName: e.target.value }))}
+                className="min-h-14.5 rounded-full bg-gray-100 border-0 px-5 text-sm"
+              />
 
-        <div className="bg-[#DFDFDF] rounded-2xl p-8 shadow-sm max-w-xl w-full">
-          <h3 className="font-semibold text-[38px] text-black text-center mb-6">Join as agent</h3>
-          <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-white px-8 rounded-[10px] py-11 max-w-133.75 w-full mx-auto">
-            <Input
-              placeholder="Full Name"
-              value={form.fullName}
-              onChange={(e) => setForm((prev) => ({ ...prev, fullName: e.target.value }))}
-              className="min-h-14.5 rounded-full bg-gray-100 border-0 px-5 text-sm"
-            />
+              <Select
+                value={form.state}
+                onValueChange={(value: string | null) => setForm((prev) => ({ ...prev, state: value ?? "" }))}
+              >
+                <SelectTrigger className="min-h-14.5 w-full rounded-full bg-gray-100 border-0 px-5 text-sm data-placeholder:text-muted-foreground">
+                  <SelectValue placeholder="State" />
+                </SelectTrigger>
+                <SelectContent>
+                  {NIGERIAN_STATES.map((state) => (
+                    <SelectItem key={state} value={state}>
+                      {state}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
 
-            <Select
-              value={form.state}
-              onValueChange={(value: string | null) => setForm((prev) => ({ ...prev, state: value ?? "" }))}
-            >
-              <SelectTrigger className="min-h-14.5 w-full rounded-full bg-gray-100 border-0 px-5 text-sm data-placeholder:text-muted-foreground">
-                <SelectValue placeholder="State" />
-              </SelectTrigger>
-              <SelectContent>
-                {NIGERIAN_STATES.map((state) => (
-                  <SelectItem key={state} value={state}>
-                    {state}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+              <Input
+                type="tel"
+                placeholder="Phone"
+                value={form.phone}
+                onChange={(e) => setForm((prev) => ({ ...prev, phone: e.target.value }))}
+                className="min-h-14.5 rounded-full bg-gray-100 border-0 px-5 text-sm"
+              />
 
-            <Input
-              type="tel"
-              placeholder="Phone"
-              value={form.phone}
-              onChange={(e) => setForm((prev) => ({ ...prev, phone: e.target.value }))}
-              className="min-h-14.5 rounded-full bg-gray-100 border-0 px-5 text-sm"
-            />
+              <Select
+                value={form.category}
+                onValueChange={(value: string | null) => setForm((prev) => ({ ...prev, category: value ?? "" }))}
+              >
+                <SelectTrigger className="min-h-14.5 w-full rounded-full bg-gray-100 border-0 px-5 text-sm data-placeholder:text-muted-foreground">
+                  <SelectValue placeholder="Category" />
+                </SelectTrigger>
+                <SelectContent>
+                  {CATEGORIES.map((cat) => (
+                    <SelectItem key={cat} value={cat}>
+                      {cat}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
 
-            <Select
-              value={form.category}
-              onValueChange={(value: string | null) => setForm((prev) => ({ ...prev, category: value ?? "" }))}
-            >
-              <SelectTrigger className="min-h-14.5 w-full rounded-full bg-gray-100 border-0 px-5 text-sm data-placeholder:text-muted-foreground">
-                <SelectValue placeholder="Category" />
-              </SelectTrigger>
-              <SelectContent>
-                {CATEGORIES.map((cat) => (
-                  <SelectItem key={cat} value={cat}>
-                    {cat}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <Button type="submit" variant="default" className="w-full h-12 rounded-full mt-2 text-base font-semibold xl:text-[25px]">
-              Submit Application
-            </Button>
-          </form>
+              <Button type="submit" variant="default" className="w-full h-12 rounded-full mt-2 text-base font-semibold xl:text-[25px]">
+                Submit Application
+              </Button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
