@@ -21,8 +21,8 @@ const SOLUTIONS = [
 export function Footer(): React.JSX.Element {
   return (
     <footer id="contact" className="bg-cream py-16 px-8 md:px-20">
-      <div className="mx-auto max-w-7xl grid grid-cols-2 md:grid-cols-4 gap-8">
-        <div className="col-span-2 md:col-span-1">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div >
           <Link href="/" className="flex items-center gap-2 mb-3">
             <Image
               src="/svgs/hippo-logo.svg"
@@ -33,7 +33,7 @@ export function Footer(): React.JSX.Element {
           </Link>
         </div>
 
-        <div>
+        <div className=""> 
           <h4 className="font-bold text-black text-[26px] mb-4.25">Quick links</h4>
           <ul className="flex flex-col gap-3">
             {QUICK_LINKS.map((link) => (
@@ -65,7 +65,7 @@ export function Footer(): React.JSX.Element {
            <Image src="/svgs/play-store-icon.svg" alt="Play Store" className="w-7 h-7" width={28} height={28} priority={false}/>
             Download Hippostock
           </Button>
-          <h4 className="font-bold text-black">Contact</h4>
+          {/* <h4 className="font-bold text-black">Contact</h4> */}
         </div>
       </div>
     </footer>
