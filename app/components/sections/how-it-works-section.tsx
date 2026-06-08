@@ -73,7 +73,7 @@ export function HowItWorksSection(): React.JSX.Element {
 
   return (
     <section id="agent" className="bg-cream py-20 px-5.25 md:px-11.5 ">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2  items-start justify-between">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-6  items-start justify-between">
         <div>
           <div className="flex items-center gap-2 mb-4">
             <span className="w-9.5 h-9.5 rounded-full bg-primary-blue inline-block" />
