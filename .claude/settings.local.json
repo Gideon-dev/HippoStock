@@ -11,7 +11,8 @@
       "Bash(npx shadcn@latest init --defaults)",
       "Bash(npx shadcn@latest add input select --overwrite)",
       "Bash(pnpm build *)",
-      "Bash(pnpm lint *)"
+      "Bash(pnpm lint *)",
+      "Bash(xargs sed -i 's|@/app/components/|@components/|g')"
     ]
   }
 }

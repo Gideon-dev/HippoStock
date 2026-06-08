@@ -5,7 +5,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback } from "react";
 
-import { Button } from "@/app/components/ui/button";
+import { Button } from "@components/ui/button";
 
 interface Product {
   name: string;
@@ -33,7 +33,7 @@ export function ProductCategorySection(): React.JSX.Element {
 
   return (
     <section id="products" className="bg-cream py-16 px-5.25 md:px-11.5 w-full">
-      <div className="mx-auto w-full max-w-360">
+      <div className="mx-auto w-full max-w-7xl">
         <div className="mb-24.5">
           <h2 className="text-[35px] md:text-[70px] font-semibold text-black mb-3">Product category</h2>
           <p className="text-black text-sm xl:text-[25px] leading-relaxed max-w-136.25">

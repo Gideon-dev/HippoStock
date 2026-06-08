@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FadeUp } from "@/app/components/ui/fade-up";
-import { Vstack } from "../ui/stacks";
+import { FadeUp } from "@components/ui/fade-up";
+import { Vstack } from "@components/ui/stacks";
 import { ArrowRight } from "lucide-react";
 
 export function NightEconomySection(): React.JSX.Element {
   return (
     <section id="night-economy" className="bg-primary-blue py-20 px-5.25 md:px-11.5 ">
-       <div className="mx-auto max-w-360 grid grid-cols-1 lg:grid-cols-2  items-center min-h-[300px] gap-10 md::gap-[197px]">
+       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 items-center min-h-75 gap-10 md:gap-[197px]">
         <FadeUp>
           <Vstack className="bg-white rounded-2xl p-9 relative gap-8.5 w-full max-w-161.25 xl:w-161.25">
             <div className="flex items-start gap-4 justify-between">

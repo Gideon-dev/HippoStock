@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { Hstack, Vstack } from "../../ui/stacks"
+import { Hstack, Vstack } from "@components/ui/stacks"
 import { ArrowRight } from "lucide-react"
 import { cn } from "@/lib/utils"
-import { FadeUp } from "../../ui/fade-up"
+import { FadeUp } from "@components/ui/fade-up"
 
 
 const CoreOperations = () => {
@@ -58,7 +58,7 @@ const CoreOperations = () => {
 
   return (
     <section className="bg-white py-27.5 pb-72.75 w-full">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+        <div className="max-w-360 mx-auto px-4 text-center">
             <FadeUp>
                 <h1 className="font-bold text-[40px] text-black w-fit mx-auto">Core Operations</h1>
             </FadeUp>

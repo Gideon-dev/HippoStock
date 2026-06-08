@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 
-import { Button } from "@/app/components/ui/button";
-import { FadeUp } from "@/app/components/ui/fade-up";
-import { Vstack } from "../ui/stacks";
+import { Button } from "@components/ui/button";
+import { FadeUp } from "@components/ui/fade-up";
+import { Vstack } from "@components/ui/stacks";
 import { cn } from "@/lib/utils";
 
 interface ServiceCard {

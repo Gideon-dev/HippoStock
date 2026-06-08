@@ -1,5 +1,5 @@
-import { Vstack } from "../../ui/stacks"
-import { FadeUp } from "../../ui/fade-up"
+import { Vstack } from "@components/ui/stacks"
+import { FadeUp } from "@components/ui/fade-up"
 
 const OperationalAdvantages = () => {
     const ADVANTAGES = [

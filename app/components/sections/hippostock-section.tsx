@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { FadeUp } from "@/app/components/ui/fade-up";
+import { FadeUp } from "@components/ui/fade-up";
 import { ArrowRight, LucideIcon, RefreshCw } from "lucide-react";
-import { Hstack, Vstack } from "../ui/stacks";
+import { Hstack, Vstack } from "@components/ui/stacks";
 import { JSX } from "react";
 import { cn } from "@/lib/utils";
 
@@ -25,13 +25,13 @@ export function HippostockSection(): React.JSX.Element {
 
   return (
     <section id="hippostock" className="bg-primary-blue py-20 px-5.25 md:px-11.5 ">
-      <div className="mx-auto max-w-360 grid grid-cols-1 lg:grid-cols-2  items-center min-h-[300px] gap-10 md::gap-[197px]">
+      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2  items-center min-h-75 gap-10 md::gap-[197px]">
         <FadeUp>
           <Vstack className="bg-white rounded-2xl p-9 relative gap-8.5 w-full max-w-161.25 xl:w-161.25">
             <div className="flex items-start gap-4 justify-between">
               <span>
                 <h2 className="font-semibold text-2xl md:text-[35px] text-black mb-2">Hippo Stock</h2>
-                <p className="font-medium text-black text-sm max-w-[411px] md:text-3xl">
+                <p className="font-medium text-black text-sm max-w-102.75 md:text-3xl">
                   Know what you have from anywhere!
                 </p>
               </span>
@@ -63,7 +63,7 @@ export function HippostockSection(): React.JSX.Element {
               iconBg= '#D0D0D0'
               msg= '2 Cartons of Mobil oil left!!'
               action='OK'
-              className="absolute bottom-15 -left-5 xl:left-10 xl:bottom-23"
+              className="absolute bottom-15 -left-5 xl:left-10 xl:bottom-23e"
             />
             <NotificationBubbles
               Icon= {<RefreshCw  className="size-3.5 animate-spin"/>}

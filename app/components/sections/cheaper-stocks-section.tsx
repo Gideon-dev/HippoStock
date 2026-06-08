@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { FadeUp } from "@/app/components/ui/fade-up";
+import { FadeUp } from "@components/ui/fade-up";
 
 export function CheaperStocksSection(): React.JSX.Element {
   return (
@@ -14,7 +14,7 @@ export function CheaperStocksSection(): React.JSX.Element {
       />
       <div className="absolute inset-0 bg-black/65" />
 
-      <div className="w-full max-w-360 mx-auto">
+      <div className="w-full max-w-7xl mx-auto">
         <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 min-h-[378px] w-full gap-10">
           <div className="flex items-center px-8">
             <FadeUp>

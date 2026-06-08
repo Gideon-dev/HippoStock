@@ -1,6 +1,6 @@
-import { Hstack, Vstack } from "../../ui/stacks"
-import { FadeUp } from "../../ui/fade-up"
-import { AnimatedCounter } from "../../ui/animated-counter"
+import { Hstack, Vstack } from "@components/ui/stacks"
+import { FadeUp } from "@components/ui/fade-up"
+import { AnimatedCounter } from "@components/ui/animated-counter"
 
 const WhoWeAreSection = () => {
   return (
