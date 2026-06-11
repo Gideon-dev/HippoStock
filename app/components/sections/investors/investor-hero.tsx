@@ -26,7 +26,10 @@ const InvestorHero = () => {
                 <FadeUp delay={0.2}>
                     <Vstack className="w-full md:flex-row md:items-center gap-4 lg:gap-7.25 mt-5.25 items-center flex-wrap lg:flex-nowrap">
                         <Button className="bg-primary-blue rounded-[20px] min-h-16 md:h-21.5 font-medium text-base md:text-[25px] w-fit">
-                            Download Investor Deck <DownloadIcon className="ml-2 size-8 shrink-0" />
+                            <a href="/docs/Hippo_Procurement_Investor_Deck_pdf" download="Hippo_Procurement_Investors_Deck.pdf">
+                            Download Investor Deck 
+                            </a>
+                            <DownloadIcon className="ml-2 size-8 shrink-0" />
                         </Button>
                         <Button className="bg-[#FF621F] rounded-[20px] min-h-16 md:min-h-21.5 font-medium text-base md:text-[25px] w-fit">
                         Schedule Investor meeting

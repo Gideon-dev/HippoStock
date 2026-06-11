@@ -8,7 +8,7 @@ const WHATSAPP_NUMBER = "+2348000000000";
 
 export function HeroSection(): React.JSX.Element {
   return (
-    <section id="home" className="relative h-screen xl:h-fit overflow-hidden ">
+    <section id="home" className="relative max-h-screen xl:h-fit overflow-hidden ">
       <Image
         src="/images/hero-bg.jpg"
         alt="Shipping port"
@@ -19,21 +19,21 @@ export function HeroSection(): React.JSX.Element {
       />
       <div className="absolute inset-0 bg-black/60" />
 
-      <div className="relative z-10 flex flex-col justify-center px-8 md:px-20 pb-20 pt-10 max-w-278.25" >
+      <div className="relative z-10 flex flex-col justify-center items-center text-center md:items-start md:text-left px-8 md:px-20 pb-20 pt-10 max-w-278.25" >
         <FadeUp delay={0}>
-          <span className="w-fit px-5 lg:px-10 bg-primary-blue text-white text-base md:text-[25px] font-medium text-center flex items-center justify-center rounded-full mb-6 py-2.5  lg:min-h-11.25">
+          <span className="w-fit px-5 lg:px-10 bg-primary-blue text-white text-base sm:text-lg md:text-[25px] font-medium text-center flex items-center justify-center mb-6 py-2.5  lg:min-h-11.25">
             Direct Factory Access
           </span>
         </FadeUp>
 
         <FadeUp delay={0.1}>
-          <h1 className="text-[42.5px] text-left md:text-6xl font-bold text-white leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
             Buy Medical Consumables and high demand products without Middlemen.
           </h1>
         </FadeUp>
 
         <FadeUp delay={0.2}>
-          <p className="text-white mt-6 text-base xl:text-[25px] font-medium md:max-w-138.75 leading-relaxed">
+          <p className="text-white mt-6 text-base sm:text-lg xl:text-[25px] font-medium md:max-w-138.75 leading-relaxed">
             Hippo helps pharmacies, clinics, and serious business owners cut costs, avoid middlemen, and restock faster using direct factory sourcing.
           </p>
         </FadeUp>
