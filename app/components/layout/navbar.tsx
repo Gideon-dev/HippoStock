@@ -9,9 +9,9 @@ import { ROUTES } from "@/lib/routes";
 
 const NAV_LINKS = [
   { label: "Home", href:  ROUTES.HOME  },
-  { label: "About", href: ROUTES.ABOUT },
+  // { label: "About", href: ROUTES.ABOUT },
   { label: "Investor", href: ROUTES.INVESTORS },
-  { label: "Hippo Stock", href: ROUTES.HIPPO_STOCK },
+  // { label: "Hippo Stock", href: ROUTES.HIPPO_STOCK },
   { label: "Night Economy", href: ROUTES.NIGHT_ECONOMY }
 ] as const;
 
@@ -32,8 +32,8 @@ export function Navbar(): React.JSX.Element {
           </Link>
 
           {/* Desktop nav */}
-          <Hstack className="px-15.25 flex-1 w-fit xl:max-w-278.25 rounded-full bg-[#0EA7FA1F] min-h-20.5 hidden md:flex">
-            <ul className="w-full flex items-center justify-between flex-wrap gap-4 py-2.5">
+          <Hstack className="px-15.25 flex-1 w-fit xl:max-w-fit rounded-full bg-[#0EA7FA1F] min-h-20.5 hidden md:flex">
+            <ul className="w-full flex items-center justify-between flex-wrap gap-10 py-2.5">
               {NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
