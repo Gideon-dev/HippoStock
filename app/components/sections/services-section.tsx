@@ -83,7 +83,7 @@ export function ServicesSection(): React.JSX.Element {
                   </div>
                   <div className="px-4 lg:px-10.5 py-10 flex flex-col gap-3 flex-1 h-full">
                     <h3 className="font-bold text-[26px] text-black">{card.title}</h3>
-                    <p className="text-black text-base xl:text-xl leading-relaxed flex-1 max-w-[325px]">
+                    <p className="text-black text-base xl:text-xl leading-relaxed flex-1 max-w-81.25">
                       {card.description}
                     </p>
                     <Button variant="service" className="w-full mt-2 gap-1.5 py-3! [box-shadow:none] animate-border-pulse">

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { MessageCircle } from "lucide-react";
 
 import { buttonVariants } from "@components/ui/button";
 import { FadeUp } from "@components/ui/fade-up";
@@ -31,7 +30,7 @@ export function CutCostSection(): React.JSX.Element {
             rel="noopener noreferrer"
             className={cn(
               buttonVariants({ variant: "whatsapp" }),
-              "inline-flex items-center gap-2 px-8 py-4 text-base h-auto"
+              "inline-flex items-center gap-2 px-8 py-4 text-base h-auto [box-shadow:none] animate-border-pulse"
             )}
           >
             <Image src="/svgs/WA-icon.svg" alt="whatspap icon" width={38} height={38} priority={false}/>
