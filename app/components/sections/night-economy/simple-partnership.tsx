@@ -3,7 +3,7 @@ import { Vstack } from "@components/ui/stacks";
 
 export function SimplePartnership(): React.JSX.Element {
   return (
-    <section className="bg-[#0C4564] py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#0C4564] py-16 md:py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center md:items-center md:justify-between gap-10 lg:gap-20">
           <FadeUp delay={0} className="flex-1 max-w-192.5">
@@ -24,7 +24,7 @@ export function SimplePartnership(): React.JSX.Element {
               <div className="flex items-center justify-center">
                 <HandshakeIcon className="size-24 sm:size-35  text-[#AEAEAE]" />
               </div>
-              <div className="bg-[#D9D9D9] px-4 py-3 text-center w-full absolute -bottom-5 -right-10">
+              <div className="bg-[#D9D9D9] px-2 py-2 text-center w-full absolute -bottom-5 -right-5 xl:-right-10">
                 <span className="text-[#2E2E2E] text-sm sm:text-xl font-medium">
                   Shared Success
                 </span>

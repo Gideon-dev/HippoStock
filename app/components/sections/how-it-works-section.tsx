@@ -99,9 +99,9 @@ export function HowItWorksSection(): React.JSX.Element {
           </div>
         </div>
         <div className="flex justify-end items-center"> 
-          <div className="bg-[#DFDFDF] rounded-2xl p-8 shadow-sm max-w-xl w-full ">
+          <div className="bg-[#DFDFDF] rounded-2xl p-4 sm:p-8 shadow-sm max-w-xl w-full ">
             <h3 className="font-semibold text-[38px] text-black text-center mb-6">Join as agent</h3>
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-white px-8 rounded-[10px] py-11 max-w-133.75 w-full mx-auto">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 bg-white px-4 sm:px-8 rounded-[10px] py-11 max-w-133.75 w-full mx-auto">
               <Input
                 placeholder="Full Name"
                 value={form.fullName}

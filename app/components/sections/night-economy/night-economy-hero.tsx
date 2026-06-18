@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Eyebrow } from "@components/ui/eyebrow";
 import { FadeUp } from "@components/ui/fade-up";
 
 export function NightEconomyHero(): React.JSX.Element {
@@ -16,11 +17,9 @@ export function NightEconomyHero(): React.JSX.Element {
       <div className="absolute inset-0 bg-black/75" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <FadeUp delay={0}>
-          <span className="inline-block bg-primary-blue text-white text-xs sm:text-sm font-medium px-3 py-1.5 mb-5">
-            24/7 Revenue Infrastructure
-          </span>
-        </FadeUp>
+        <Eyebrow
+          title=" 24/7 Revenue Infrastructure"
+        />
 
         <FadeUp delay={0.1}>
           <h1 className="text-white font-bold text-3xl sm:text-4xl md:text-5xl lg:text-[60px] max-w-249 mb-5">

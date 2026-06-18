@@ -2,67 +2,80 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FadeUp } from "@components/ui/fade-up";
-import { ArrowRight, LucideIcon, RefreshCw } from "lucide-react";
-import { Hstack, Vstack } from "@components/ui/stacks";
-import { JSX } from "react";
+import { Hstack } from "@components/ui/stacks";
 import { cn } from "@/lib/utils";
+import { RefreshCw } from "lucide-react";
+import { JSX } from "react";
 
-export function HippostockSection(): React.JSX.Element {
+export function IntelligenceHero(): React.JSX.Element {
   return (
-    <section id="hippostock" className="bg-primary-blue py-20 px-5.25 md:px-11.5 ">
-      <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2  items-center min-h-75 gap-10 md::gap-[197px]">
+    <section className="relative bg-[#F2F2F2] py-16 md:py-24 px-5.25 md:px-11.5 overflow-hidden">
+      {/* <Image
+        src="/images/white-lines-bg.png"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center pointer-events-none select-none"
+      /> */}
+      <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-10">
         <FadeUp>
-          <Vstack className="bg-white rounded-2xl p-9 relative gap-8.5 w-full max-w-161.25 xl:w-161.25">
-            <div className="flex items-start gap-4 justify-between">
-              <span>
-                <h2 className="font-semibold text-2xl md:text-[35px] text-black mb-2">Hippo Stock</h2>
-                <p className="font-medium text-black text-sm max-w-102.75 md:text-3xl">
-                  Know what you have from anywhere!
-                </p>
-              </span>
-              <BellIcon className="size-12 md:size-21.75" />
-            </div>
-            <p className="text-xl italic font-medium md:text-[25px]">
-              HippoStock watches your inventory in real time, triggers scarcity alerts before you run dry, and tells you exactly what to reorder.
+          <div>
+            <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[67px] leading-tight mb-5">
+              <span className="text-black">Do Business With</span>
+              <br />
+              <span className="text-primary-blue">Certainty.</span>
+            </h1>
+            <p className="text-black/80 text-sm sm:text-base md:text-[25px] max-w-126.25 mb-8 md:mb-10">
+              Hippo Intelligence turns inventory data, supplier relationships,
+              and market signals into actionable business intelligence. Built
+              for the realities of African trade.
             </p>
             <Link
-              href="#"
-              className="text-[#0799E7] text-lg md:text-[25px] font-normal flex items-center gap-2.5 md:gap-4.5"
+              href="#waitlist"
+              className="inline-flex items-center justify-center bg-black text-white font-semibold text-sm sm:text-3xl px-8 py-4 rounded-full hover:bg-black/85 transition-colors"
             >
-              seemore <ArrowRight className="size-3.5" />
+              Join the waitlist
             </Link>
-          </Vstack>
-        </FadeUp>
-
-        <FadeUp delay={0.15}>
-          <div className="relative w-full aspect-square max-w-115.5 mx-auto">
-            <Image
-              src="/images/iphone-image.png"
-              alt="HippoStock app mockup"
-              fill
-              sizes="(max-width: 768px) 100vw, 373px"
-              className="object-cover"
-            />
-            <NotificationBubbles
-              Icon= { <BellIcon className="size-4.25 animate-bounce"/>}
-              iconBg= '#D0D0D0'
-              msg= '2 Cartons of Mobil oil left!!'
-              action='OK'
-              className="absolute bottom-15 -left-5 xl:left-10 xl:bottom-23e"
-            />
-            <NotificationBubbles
-              Icon= {<RefreshCw  className="size-3.5 animate-spin"/>}
-              iconBg= '#D0D0D0'
-              msg= 'Iphone 12 screen 17 left!!'
-              action= 'Reorder'
-               className="absolute top-20 -right-5 xl:-right-1 xl:top-25"
-            />
           </div>
         </FadeUp>
+
+        <div className="bg-cover bg-no-repeat max-w-133.5 w-full min-h-118 "
+        style={{
+          backgroundImage: `url('/images/intelligence-hero-img.png')`,
+        }}
+        >
+          <FadeUp delay={0.15} className="">
+            <div className="relative w-full aspect-square max-w-115.5 mx-auto translate-y-1/2 md:translate-0">
+              <Image
+                src="/images/iphone-image.png"
+                alt="HippoStock app mockup"
+                fill
+                sizes="(max-width: 768px) 100vw, 373px"
+                className="object-cover"
+              />
+              <NotificationBubbles
+                Icon= { <BellIcon className="size-4.25 animate-bounce"/>}
+                iconBg= '#D0D0D0'
+                msg= '2 Cartons of Mobil oil left!!'
+                action='OK'
+                className="absolute bottom-15 -left-5 xl:left-10 xl:bottom-23e"
+              />
+              <NotificationBubbles
+                Icon= {<RefreshCw  className="size-3.5 animate-spin"/>}
+                iconBg= '#D0D0D0'
+                msg= 'Iphone 12 screen 17 left!!'
+                action= 'Reorder'
+                  className="absolute top-20 -right-5 xl:-right-1 xl:top-25"
+              />
+            </div>
+          </FadeUp>
+        </div>
       </div>
     </section>
   );
 }
+
 
 interface NotificationBubblesProps{
   Icon: JSX.Element,
@@ -88,7 +101,6 @@ const NotificationBubbles =({Icon, iconBg, msg,action, className}:NotificationBu
     </Hstack>
   )
 }
-
 
 const BellIcon = ({className}:{className:string}) => (
   <svg className={className} viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
