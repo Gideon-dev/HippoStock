@@ -1,6 +1,8 @@
+import Link from "next/link"
 import { Button } from "@components/ui/button"
 import { Vstack } from "@components/ui/stacks"
 import { FadeUp } from "@components/ui/fade-up"
+import { WHATSAPP_LINK } from "@/lib/routes"
 
 
 const GrowthPatner = () => {
@@ -14,9 +16,15 @@ const GrowthPatner = () => {
                 <span className="text-xl font-normal text-white text-center max-w-188.5">Capitalize on the growth of SME infrastructure and trade coordination across <span className="font-bold"> West Africa</span>.</span>
             </FadeUp>
             <FadeUp delay={0.2}>
-                <Button className="bg-[#FF621F] h-fit py-6 text-base rounded-[20px] text-white  md:min-h-19 w-fit md:text-xl font-bold animate-border-pulse">
-                    SCHEDULE MEETING
-                </Button>
+                <Button
+                    nativeButton={false}
+                    className="bg-[#FF621F] h-fit py-6 text-base rounded-[20px] text-white  md:min-h-19 w-fit md:text-xl font-bold animate-border-pulse"
+                    render={
+                        <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+                            SCHEDULE MEETING
+                        </Link>
+                    }
+                />
             </FadeUp>
         </Vstack>
   </section>

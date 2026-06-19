@@ -4,8 +4,7 @@ import { buttonVariants } from "@components/ui/button";
 import { FadeUp } from "@components/ui/fade-up";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-
-const WHATSAPP_NUMBER = "+2348000000000";
+import { WHATSAPP_LINK } from "@/lib/routes";
 
 export function CutCostSection(): React.JSX.Element {
   return (
@@ -25,7 +24,7 @@ export function CutCostSection(): React.JSX.Element {
 
         <FadeUp delay={0.2}>
           <Link
-            href={`https://wa.me/${WHATSAPP_NUMBER}`}
+            href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(

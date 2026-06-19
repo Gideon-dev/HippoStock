@@ -8,7 +8,7 @@ import { createPortal } from "react-dom";
 
 import { buttonVariants } from "@components/ui/button";
 import { cn } from "@/lib/utils";
-import { ROUTES } from "@/lib/routes";
+import { ROUTES, WHATSAPP_LINK } from "@/lib/routes";
 
 const NAV_LINKS = [
    { label: "Home", href:  ROUTES.HOME  },
@@ -129,7 +129,9 @@ export function MobileNav(): React.JSX.Element {
               className="px-6 py-6 border-t border-gray-100"
             >
               <Link
-                href="#contact"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={close}
                 className={cn(
                   buttonVariants({ variant: "default" }),

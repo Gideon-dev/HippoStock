@@ -16,7 +16,8 @@
       "Bash(node -e \"console.log\\(require\\('sharp'\\)\\)\")",
       "Bash(pnpm dlx *)",
       "Bash(node -e \"console.log\\(require.resolve\\('sharp'\\)\\)\")",
-      "Bash(node convert-heic.cjs)"
+      "Bash(node convert-heic.cjs)",
+      "Bash(npx tsc *)"
     ]
   }
 }
