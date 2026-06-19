@@ -1,6 +1,7 @@
 import { ArrowDown, ArrowRight, Database, Network, Radio } from "lucide-react";
 
 import { FadeUp } from "@components/ui/fade-up";
+import Image from "next/image";
 
 
 export function ProcessFlowSection(): React.JSX.Element {
@@ -13,14 +14,15 @@ export function ProcessFlowSection(): React.JSX.Element {
   ];
 
   return (
-    <section className="relative bg-[#F2F2F2] py-16 md:py-20 px-5.25 md:px-11.5 border-y border-black/5 overflow-x-scroll">
-      {/* <Image
-        src="/images/white-lines-bg.png"
-        alt=""
+    <section className="relative bg-[#F2F2F2] py-16 md:py-20 px-5.25 md:px-11.5 border-y border-black/5 overflow-x-scroll xl:overflow-hidden min-h-[439px]">
+     <Image
+        src="/images/blue-image-line-bg.png"
+        alt="cartesian grid bg"
         fill
+        priority
         sizes="100vw"
         className="object-cover object-center pointer-events-none select-none"
-      /> */}
+      />
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8">
         {STEPS.map((step, index) => (
           <FadeUp key={step.id} delay={0.08 * index} className="flex flex-col lg:contents items-center">

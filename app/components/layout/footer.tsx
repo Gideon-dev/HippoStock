@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Smartphone } from "lucide-react";
 
 import { Button } from "@components/ui/button";
 
@@ -61,7 +60,7 @@ export function Footer(): React.JSX.Element {
         </div>
 
         <div className="flex flex-col gap-4">
-          <Button variant="service" className="rounded-full gap-2 px-5 w-fit">
+          <Button variant="service" className="rounded-full gap-2 px-5 w-fit animate-border-pulse">
            <Image src="/svgs/play-store-icon.svg" alt="Play Store" className="w-7 h-7" width={28} height={28} priority={false}/>
             Download Hippostock
           </Button>

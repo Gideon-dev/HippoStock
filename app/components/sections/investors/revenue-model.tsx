@@ -30,7 +30,7 @@ const RevenueModel = () => {
             <FadeUp>
                 <span className="text-[40px] font-bold text-center flex items-center justify-center mb-7">REVENUE MODEL</span>
             </FadeUp>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9.5 border-2 border-black p-8.5">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9.5 border-2 border-black p-4.25 sm:p-8.5">
                 {REVENUE_MODEL.map((rev, index) => (
                     <FadeUp key={rev.id} delay={0.1 * index}>
                         <RevenueCard info={rev.info} label={rev.label} tag={rev.tag}/>

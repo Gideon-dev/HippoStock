@@ -28,7 +28,7 @@ const WhoWeAreSection = () => {
         </Vstack>
         <FadeUp delay={0.15}>
           <div className="flex-1 grid grid-cols-2 gap-5 md:gap-10.75">
-            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-7.75">
+            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-4 sm:px-7.75">
               <div className="flex items-baseline gap-1">
                 <AnimatedCounter
                   value="60"
@@ -38,18 +38,18 @@ const WhoWeAreSection = () => {
               </div>
               <span className="font-medium text-xl text-black">ACTIVE AGENTS</span>
             </Vstack>
-            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-7.75">
+            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-4 sm:px-7.75">
               <Hstack className="gap-5 items-center">
                 <NigeriaIcon />
                 <GhanaIcon />
               </Hstack>
               <span className="font-medium text-xl text-black">Operations in NIGERIA & GHANA</span>
             </Vstack>
-            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-7.75">
+            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-4 sm:px-7.75">
               <span className="font-bold text-[40px] text-[#FF621F]">MCE</span>
               <span className="font-medium text-xl text-black">MEDICAL FOCUS</span>
             </Vstack>
-            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-7.75 justify-center">
+            <Vstack className="border border-[#9C9C9C] bg-[#DDDDDD] gap-2.5 py-4.5 px-4 sm:px-7.75 justify-center">
               <span className="font-medium text-xl text-black">Abuja Hub-90% complete</span>
             </Vstack>
           </div>

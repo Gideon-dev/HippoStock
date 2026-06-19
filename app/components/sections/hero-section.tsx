@@ -8,9 +8,9 @@ const WHATSAPP_NUMBER = "+2348000000000";
 
 export function HeroSection(): React.JSX.Element {
   return (
-    <section id="home" className="relative max-h-dvh xl:h-fit overflow-hidden ">
+    <section id="home" className="relative min-h-dvh xl:h-fit overflow-hidden ">
       <Image
-        src="/images/hero-bg.jpg"
+        src="/images/hippo-cargo/cargo-image-3.jpg"
         alt="Shipping port"
         fill
         priority

@@ -10,14 +10,14 @@ import { JSX } from "react";
 export function IntelligenceHero(): React.JSX.Element {
   return (
     <section className="relative bg-[#F2F2F2] py-16 md:py-24 px-5.25 md:px-11.5 overflow-hidden">
-      {/* <Image
-        src="/images/white-lines-bg.png"
-        alt=""
+      <Image
+        src="/images/blue-image-line-bg.png"
+        alt="cartesian grid bg"
         fill
         priority
         sizes="100vw"
         className="object-cover object-center pointer-events-none select-none"
-      /> */}
+      />
       <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-10">
         <FadeUp>
           <div>
@@ -33,16 +33,16 @@ export function IntelligenceHero(): React.JSX.Element {
             </p>
             <Link
               href="#waitlist"
-              className="inline-flex items-center justify-center bg-black text-white font-semibold text-sm sm:text-3xl px-8 py-4 rounded-full hover:bg-black/85 transition-colors"
+              className="inline-flex  animate-border-pulse items-center justify-center bg-black text-white font-semibold text-sm sm:text-3xl px-8 py-4 rounded-full hover:bg-black/85 transition-colors"
             >
               Join the waitlist
             </Link>
           </div>
         </FadeUp>
 
-        <div className="bg-cover bg-no-repeat max-w-133.5 w-full min-h-118 "
+        <div className="bg-cover rounded-[10px] bg-center bg-no-repeat max-w-133.5 w-full min-h-118"
         style={{
-          backgroundImage: `url('/images/intelligence-hero-img.png')`,
+          backgroundImage: `url('/images/hippo-intelligence-hero.jpg')`,
         }}
         >
           <FadeUp delay={0.15} className="">

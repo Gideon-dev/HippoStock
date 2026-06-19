@@ -67,7 +67,7 @@ export function HowItWorksSection(): React.JSX.Element {
     category: "",
   });
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>): void {
+  function handleSubmit(e: React.SubmitEvent<HTMLFormElement>): void {
     e.preventDefault();
   }
 
@@ -149,7 +149,7 @@ export function HowItWorksSection(): React.JSX.Element {
                 </SelectContent>
               </Select>
 
-              <Button type="submit" variant="default" className="w-full h-12 rounded-full mt-2 text-base font-semibold xl:text-[25px]">
+              <Button type="submit" variant="default" className="w-full animate-border-pulse h-12 rounded-full mt-2 text-base font-semibold xl:text-[25px]">
                 Submit Application
               </Button>
             </form>
