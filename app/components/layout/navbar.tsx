@@ -5,7 +5,7 @@ import { buttonVariants } from "@components/ui/button";
 import { cn } from "@/lib/utils";
 import { Hstack } from "@components/ui/stacks";
 import { MobileNav } from "@components/layout/mobile-nav";
-import { ROUTES } from "@/lib/routes";
+import { ROUTES, WHATSAPP_LINK } from "@/lib/routes";
 
 const NAV_LINKS = [
   { label: "Home", href:  ROUTES.HOME  },
@@ -45,7 +45,9 @@ export function Navbar(): React.JSX.Element {
                 </li>
               ))}
               <Link
-                href="#contact"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={cn(
                   buttonVariants({ variant: "default" }),
                   "border border-white rounded-[26px] font-semibold text-lg min-h-10.5 max-w-43"

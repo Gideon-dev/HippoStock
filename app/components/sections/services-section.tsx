@@ -1,15 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 import { Button } from "@components/ui/button";
 import { FadeUp } from "@components/ui/fade-up";
 import { Vstack } from "@components/ui/stacks";
 import { cn } from "@/lib/utils";
+import { WHATSAPP_LINK } from "@/lib/routes";
 
 interface ServiceCard {
   title: string;
   description: string;
   cta: string;
+  href?: string;
   image: string;
   imageAlt: string;
 }
@@ -33,6 +36,7 @@ const SERVICE_CARDS: ServiceCard[] = [
     title: "Night Economy",
     description: "Built for businesses that run 9 PM – 5 AM. We keep your operations running, your revenue flowing, all night long.",
     cta: "Contact for partnership",
+    href: WHATSAPP_LINK,
     image: "/images/service-cargo-img-3.png",
     imageAlt: "City at night with skyscrapers",
   },
@@ -86,10 +90,24 @@ export function ServicesSection(): React.JSX.Element {
                     <p className="text-black text-base xl:text-xl leading-relaxed flex-1 max-w-81.25">
                       {card.description}
                     </p>
-                    <Button variant="service" className="w-full mt-2 gap-1.5 py-3! [box-shadow:none] animate-border-pulse">
-                      {card.cta}
-                      <ArrowUpRight className="size-6 shrink-0" />
-                    </Button>
+                    {card.href ? (
+                      <Button
+                        variant="service"
+                        nativeButton={false}
+                        className="w-full mt-2 gap-1.5 py-3! [box-shadow:none] animate-border-pulse"
+                        render={
+                          <Link href={card.href} target="_blank" rel="noopener noreferrer">
+                            {card.cta}
+                            <ArrowUpRight className="size-6 shrink-0" />
+                          </Link>
+                        }
+                      />
+                    ) : (
+                      <Button variant="service" className="w-full mt-2 gap-1.5 py-3! [box-shadow:none] animate-border-pulse">
+                        {card.cta}
+                        <ArrowUpRight className="size-6 shrink-0" />
+                      </Button>
+                    )}
                   </div>
                 </div>
               </FadeUp>

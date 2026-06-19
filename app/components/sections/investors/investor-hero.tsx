@@ -4,6 +4,7 @@ import { Vstack } from "@components/ui/stacks"
 import { Button } from "@components/ui/button"
 import { DownloadIcon } from "lucide-react"
 import { FadeUp } from "@components/ui/fade-up"
+import { WHATSAPP_LINK } from "@/lib/routes"
 
 const InvestorHero = () => {
   return (
@@ -37,9 +38,15 @@ const InvestorHero = () => {
                                 </Link>
                             }
                         />
-                        <Button className="bg-[#FF621F] rounded-[20px] min-h-16 md:min-h-21.5 font-medium text-sm md:text-[25px] w-fit">
-                        Schedule Investor meeting
-                        </Button>
+                        <Button
+                            nativeButton={false}
+                            className="bg-[#FF621F] rounded-[20px] min-h-16 md:min-h-21.5 font-medium text-sm md:text-[25px] w-fit"
+                            render={
+                                <Link href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+                                    Schedule Investor meeting
+                                </Link>
+                            }
+                        />
                     </Vstack>
                 </FadeUp>
             </div>

@@ -3,8 +3,7 @@ import Link from "next/link";
 
 import { Eyebrow } from "@components/ui/eyebrow";
 import { FadeUp } from "@components/ui/fade-up";
-
-const WHATSAPP_NUMBER = "+2348000000000";
+import { WHATSAPP_LINK } from "@/lib/routes";
 
 export function HeroSection(): React.JSX.Element {
   return (
@@ -38,7 +37,7 @@ export function HeroSection(): React.JSX.Element {
         </div>
 
         <Link
-          href={`https://wa.me/${WHATSAPP_NUMBER}`}
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-8 right-8 z-50 bg-whatsapp text-white rounded-full w-14 h-14 flex items-center justify-center shadow-xl hover:bg-whatsapp/90 transition-colors [box-shadow:none] animate-border-pulse"

@@ -7,3 +7,6 @@ export const ROUTES = {
     HIPPO_INTELLIGENCE: "/hippo-intelligence",
     OTHER_CATEGORIES: "/other-categories"
 }
+
+export const WHATSAPP_NUMBER = "+233553591919";
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER.replace("+", "")}`;
