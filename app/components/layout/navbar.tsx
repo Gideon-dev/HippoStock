@@ -25,7 +25,7 @@ export function Navbar(): React.JSX.Element {
               src="/svgs/hippo-logo.svg"
               alt="Hippo Procurement"
               fill
-              className="object-cover object-center w-auto"
+              className="object-cover object-center"
               loading="eager"
               priority
             />
