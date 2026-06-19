@@ -48,7 +48,7 @@ export function NightEconomyHero(): React.JSX.Element {
         <FadeUp delay={0.4}>
           <Link
             href="#"
-            className="inline-flex items-center justify-center bg-[#FF621F] text-black font-medium text-sm sm:text-[25px] px-8 py-3.5 rounded-full hover:bg-[#FF621F]/90 transition-colors"
+            className="inline-flex items-center justify-center bg-[#FF621F] text-black font-medium text-sm sm:text-[25px] px-8 py-3.5 rounded-full hover:bg-[#FF621F]/90 transition-colors animate-border-pulse"
           >
             Book Consultation
           </Link>

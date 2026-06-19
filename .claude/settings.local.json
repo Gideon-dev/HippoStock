@@ -12,7 +12,11 @@
       "Bash(npx shadcn@latest add input select --overwrite)",
       "Bash(pnpm build *)",
       "Bash(pnpm lint *)",
-      "Bash(xargs sed -i 's|@/app/components/|@components/|g')"
+      "Bash(xargs sed -i 's|@/app/components/|@components/|g')",
+      "Bash(node -e \"console.log\\(require\\('sharp'\\)\\)\")",
+      "Bash(pnpm dlx *)",
+      "Bash(node -e \"console.log\\(require.resolve\\('sharp'\\)\\)\")",
+      "Bash(node convert-heic.cjs)"
     ]
   }
 }

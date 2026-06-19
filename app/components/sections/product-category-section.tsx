@@ -79,7 +79,7 @@ export function ProductCategorySection(): React.JSX.Element {
                       />
                     )}
                   </div>  
-                  <Link href={ROUTES.OTHER_CATEGORIES} className="py-1.5 px-5 bg-black text-[#FFFDFD] font-medium text-[15px] flex-1 flex items-center gap-1.5 rounded-[5px] w-full">Other Categories <ArrowRight className="size-4.5 text-white"/></Link>
+                  <Link href={ROUTES.OTHER_CATEGORIES} className="py-1.5 px-5 bg-black text-[#FFFDFD] font-medium text-xs sm:text-[15px] flex-1 flex items-center gap-1.5 rounded-[5px] w-full animate-border-pulse">Other Categories <ArrowRight className="size-4.5 text-white"/></Link>
                 </div>
               )}
             </div>

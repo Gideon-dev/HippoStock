@@ -11,9 +11,8 @@ const NAV_LINKS = [
   { label: "Home", href:  ROUTES.HOME  },
   // { label: "About", href: ROUTES.ABOUT },
   { label: "Investor", href: ROUTES.INVESTORS },
-  // { label: "Hippo Stock", href: ROUTES.HIPPO_STOCK },
-  { label: "Night Economy", href: ROUTES.NIGHT_ECONOMY },
-  { label: "Hippo Intelligence", href: ROUTES.HIPPO_INTELLIGENCE }
+  { label: "Hippo Intelligence", href: ROUTES.HIPPO_INTELLIGENCE },
+  { label: "Hippo Management", href: ROUTES.HIPPO_MANAGEMENT }
 ] as const;
 
 export function Navbar(): React.JSX.Element {

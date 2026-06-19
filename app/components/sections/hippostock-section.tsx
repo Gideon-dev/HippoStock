@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { FadeUp } from "@components/ui/fade-up";
-import { ArrowRight, LucideIcon, RefreshCw } from "lucide-react";
+import { ArrowRight, RefreshCw } from "lucide-react";
 import { Hstack, Vstack } from "@components/ui/stacks";
 import { JSX } from "react";
 import { cn } from "@/lib/utils";

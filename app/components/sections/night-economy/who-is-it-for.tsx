@@ -46,7 +46,7 @@ export function WhoIsItFor(): React.JSX.Element {
         <FadeUp delay={0.3}>
           <Link
             href="#"
-            className="inline-flex items-center justify-center bg-black text-white font-normal text-sm sm:text-[24px] px-10 sm:px-16 py-4 sm:py-5 rounded-full hover:bg-black/85 transition-colors w-full sm:w-auto max-w-sm sm:max-w-none capitalize"
+            className="inline-flex items-center justify-center bg-black text-white font-normal text-sm sm:text-[24px] px-10 sm:px-16 py-4 sm:py-5 rounded-full hover:bg-black/85 transition-colors w-full sm:w-auto max-w-sm sm:max-w-none capitalize animate-border-pulse"
           >
             Speak With A Hippo Operations Lead
           </Link>

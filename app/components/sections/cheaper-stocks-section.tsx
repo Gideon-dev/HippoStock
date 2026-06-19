@@ -6,7 +6,7 @@ export function CheaperStocksSection(): React.JSX.Element {
   return (
     <section className="relative min-h-[500px] py-8 overflow-hidden flex items-center w-full">
       <Image
-        src="/images/cheaper-stocks-bg.jpg"
+        src="/images/hippo-cargo/cargo-image-6.jpg"
         alt="Port crane"
         fill
         sizes="100vw"

@@ -58,7 +58,7 @@ const CoreOperations = () => {
 
   return (
     <section className="bg-white py-27.5 pb-72.75 w-full">
-        <div className="max-w-360 mx-auto px-4 text-center">
+        <div className="max-w-360 mx-auto px-2 sm:px-4 text-center">
             <FadeUp>
                 <h1 className="font-bold text-[40px] text-black w-fit mx-auto">Core Operations</h1>
             </FadeUp>
